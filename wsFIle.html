@@ -90,6 +90,7 @@
                     readBlob();
                 } 
                 else{
+                    ws.send("END");
                     console.log("总共上传：" + cuLoaded + ",总共用时：" + (new Date().getTime() - startTime.getTime()) / 1000);
                 }
                 //显示结果
